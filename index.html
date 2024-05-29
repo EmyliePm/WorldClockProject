@@ -8,49 +8,61 @@
   </head>
   <body>
     <div class="container">
+      <h1>World Clock</h1>
       <div class="currentContainer">
-        <h1>Hello World</h1>
         <div class="currentTimeZone">Current Time Zone</div>
       </div>
 
-      <select name="" id="">
+      <select name="" id="" class="selector">
         <option value="">Choose a city</option>
         <option value="">London</option>
         <option value="">New York</option>
         <option value="">Paris</option>
         <option value="">Tokyo</option>
       </select>
+      <div class="break"></div>
       <div class="displayedCities">
-        <div class="city">
-          <h2>London 🇬🇧</h2>
+        <div class="firstDisplayedCity">
+          <h2 class="cityName">London</h2>
           <div class="date">Wednesday 29th May 2024</div>
           <div class="time">15:36:22 PM</div>
         </div>
-        <div class="city">
-          <h2>New York 🇺🇸</h2>
+        <div class="break"></div>
+        <div class="secondDisplayedCity">
+          <h2 class="cityName">New York</h2>
+          <div class="date">Wednesday 29th May 2024</div>
+          <div class="time">15:36:22 PM</div>
+        </div>
+        <div class="break"></div>
+        <div class="thirdDisplayedCity">
+          <h2 class="cityName">Tokyo</h2>
           <div class="date">Wednesday 29th May 2024</div>
           <div class="time">15:36:22 PM</div>
         </div>
       </div>
+      <footer>
+        <p>
+          Coded by
+          <a href="https://github.com/EmyliePm" target="_blank"
+            >Emylie Periot-McCann</a
+          >
+          is
+          <a
+            href="https://github.com/EmyliePm/WorldClockProject"
+            target="_blank"
+          >
+            open-sourced on GitHub</a
+          >
+          and
+          <a
+            href="https://admirable-nasturtium-97b61c.netlify.app/"
+            target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
     </div>
-    <footer>
-      <p>
-        Coded by
-        <a href="https://github.com/EmyliePm" target="_blank"
-          >Emylie Periot-McCann</a
-        >
-        is
-        <a href="https://github.com/EmyliePm/WorldClockProject" target="_blank">
-          open-sourced on GitHub</a
-        >
-        and
-        <a
-          href="https://admirable-nasturtium-97b61c.netlify.app/"
-          target="_blank"
-          >hosted on Netlify</a
-        >
-      </p>
-    </footer>
+
     <script src="src/index.js"></script>
   </body>
 </html>
