@@ -26,26 +26,45 @@ h1 {
 .break {
   padding: 10px;
 }
-.cityName {
+.displayCity {
   display: flex;
-  width: auto;
-  background-color: rgba(246, 243, 247, 0.5);
-}
-.date,
-.time {
-  display: flex;
-  justify-content: end;
-  font-weight: 900;
-}
-.firstDisplayedCity {
+  justify-content: space-between;
+  align-items: center;
   background-image: url("../src/images/unionJack.jpg");
+  background-size: cover;
+  padding: 10px;
+  color: black;
 }
-.secondDisplayedCity {
-  background-image: url("../src/images/usaFlag.jpg");
+
+.left-section {
+  display: flex;
+  align-items: center;
 }
-.thirdDisplayedCity {
-  background-image: url("../src/images/japanFlag.jpg");
-  background-position: center;
+
+.location-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+
+.location {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.right-section {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+.time {
+  font-size: 24px;
+  font-weight: bold;
 }
 footer {
   padding: 100px;
