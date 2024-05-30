@@ -60,6 +60,15 @@ h1 {
   padding: 10px;
   color: black;
 }
+.displayCity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../src/images/wow.jpg");
+  background-size: cover;
+  padding: 10px;
+  color: black;
+}
 
 .left-section {
   display: flex;

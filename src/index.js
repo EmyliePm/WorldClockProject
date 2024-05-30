@@ -43,3 +43,25 @@ setInterval(updateCurrentTime, 1000);
 setInterval(updateLondonTime, 1000);
 setInterval(updateParisTime, 1000);
 setInterval(updateTokyoTime, 1000);
+
+//Selectors
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+  let citiesElement = document.querySelector("#displatedCities");
+  citiesElement.innerHTML = `  <div class="displayedCities">
+        <div class="displayCity" id="city">
+          <div class="left-section">
+            <div class="location-box">
+              <div class="location">${cityTimeZone}</div>
+              <div class="date">${cityTime.format(" Do dddd MMMM YYYY")}</div>
+            </div>
+          </div>
+          <div class="right-section">
+            <div class="time">${cityTime.format("h:mm:ss [<small>]A[</small>]")}
+          </div>
+        </div>`;
+}
+let citiesSelectElement = document.querySelector("#selectorCity");
+citiesSelectElement.addEventListener("change", updateCity);
