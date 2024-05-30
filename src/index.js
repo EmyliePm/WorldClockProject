@@ -2,5 +2,22 @@
 let londonElement = document.querySelector("#london");
 let londonDateElement = londonElement.querySelector(".date");
 let londonTimeElement = londonElement.querySelector(".time");
-// londonDateElement.innerHTML = "hi";
-// londonTimeElement.innerHTML = "hi";
+let londonTime = moment().tz("Europe/London");
+londonDateElement.innerHTML = moment().format(" Do dddd MMMM YYYY");
+londonTimeElement.innerHTML = londonTime.format("h:mm:ss [<small>]A[</small>]");
+
+//Paris
+let parisElement = document.querySelector("#paris");
+let parisDateElement = parisElement.querySelector(".date");
+let parisTimeElement = parisElement.querySelector(".time");
+let parisTime = moment().tz("Europe/Paris");
+parisDateElement.innerHTML = moment().format(" Do dddd MMMM YYYY");
+parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
+
+//Tokyo
+let tokyoElement = document.querySelector("#tokyo");
+let tokyoDateElement = tokyoElement.querySelector(".date");
+let tokyoTimeElement = tokyoElement.querySelector(".time");
+let tokyoTime = moment().tz("Asia/Tokyo");
+tokyoDateElement.innerHTML = moment().format(" Do dddd MMMM YYYY");
+tokyoTimeElement.innerHTML = tokyoTime.format("h:mm:ss [<small>]A[</small>]");
