@@ -26,11 +26,31 @@ h1 {
 .break {
   padding: 10px;
 }
-.displayCity {
+.displayLondonCity {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-image: url("../src/images/unionJack.jpg");
+  background-size: cover;
+  padding: 10px;
+  color: black;
+}
+
+.displayTokyoCity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../src/images/japanFlag.jpg");
+  background-size: cover;
+  padding: 10px;
+  color: black;
+}
+
+.displayParisCity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../src/images/frFlag.jpg");
   background-size: cover;
   padding: 10px;
   color: black;
