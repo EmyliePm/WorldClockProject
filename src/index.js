@@ -104,3 +104,17 @@ function updateCity(event) {
 
 let citiesSelectElement = document.querySelector("#selectorCity");
 citiesSelectElement.addEventListener("change", updateCity);
+
+// dark Theme
+function changeTheme() {
+  let body = document.querySelector("body");
+  body.classList.toggle("dark");
+  let buttonText = document.querySelector(".darkThemeButton");
+  if (body.classList.contains("dark")) {
+    buttonText.innerHTML = "Light Theme";
+  } else {
+    buttonText.innerHTML = "Dark Theme";
+  }
+}
+let themeButton = document.querySelector(".darkThemeButton");
+themeButton.addEventListener("click", changeTheme);
