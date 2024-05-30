@@ -104,16 +104,7 @@ function updateCity(event) {
       </div>`;
   }
 
-  // Call updateTime immediately to show the time right after selecting the city
-  updateTime();
-
-  // Clear any existing intervals to avoid multiple intervals running at the same time
-  if (window.cityTimeInterval) {
-    clearInterval(window.cityTimeInterval);
-  }
-
-  // Set an interval to update the time every second
-  window.cityTimeInterval = setInterval(updateTime, 1000);
+  setInterval(updateTime, 1000);
 }
 
 let citiesSelectElement = document.querySelector("#selectorCity");
