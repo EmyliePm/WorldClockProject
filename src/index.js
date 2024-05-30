@@ -1,3 +1,11 @@
+//current
+let currentTimeElement = document.querySelector("#currentTimeZone");
+let currentTimeZone = moment.tz.guess();
+let currentTime = moment().tz(currentTimeZone);
+currentTimeElement.innerHTML = `Current time in ${currentTimeZone} is ${currentTime.format(
+  "h:mm:ss [<small>]A[</small>]"
+)}`;
+
 //London
 let londonElement = document.querySelector("#london");
 let londonDateElement = londonElement.querySelector(".date");
