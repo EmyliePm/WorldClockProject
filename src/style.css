@@ -86,6 +86,9 @@ h1 {
   font-size: 24px;
   font-weight: bold;
 }
+.time small {
+  font-size: 16px;
+}
 footer {
   padding: 100px;
   text-align: center;
