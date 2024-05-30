@@ -86,6 +86,7 @@ function updateCity(event) {
               "h:mm:ss [<small>]A[</small>]"
             )}</div>
           </div>
+          check
         </div>
       </div>`;
   }
@@ -116,5 +117,5 @@ function changeTheme() {
     buttonText.innerHTML = "Dark Theme";
   }
 }
-let themeButton = document.querySelector(".darkThemeButton");
+let themeButton = document.querySelector("#darkThemeButton");
 themeButton.addEventListener("click", changeTheme);
