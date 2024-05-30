@@ -58,27 +58,6 @@ setInterval(updateTokyoTime, 1000);
 
 //Selectors
 
-// function updateCity(event) {
-//   let cityTimeZone = event.target.value;
-//   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
-//   let cityTime = moment().tz(cityTimeZone);
-//   let citiesElement = document.querySelector("#displatedCities");
-//   citiesElement.innerHTML = `  <div class="displayedCities">
-//         <div class="displayCity" id="city">
-//           <div class="left-section">
-//             <div class="location-box">
-//               <div class="location">${cityName}</div>
-//               <div class="date">${cityTime.format(" Do dddd MMMM YYYY")}</div>
-//             </div>
-//           </div>
-//           <div class="right-section">
-//             <div class="time">${cityTime.format("h:mm:ss [<small>]A[</small>]")}
-//           </div>
-//         </div>`;
-// }
-// let citiesSelectElement = document.querySelector("#selectorCity");
-// citiesSelectElement.addEventListener("change", updateCity);
-
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
