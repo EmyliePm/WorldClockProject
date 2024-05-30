@@ -3,8 +3,9 @@ function updateCurrentTime() {
   let currentTimeElement = document.querySelector("#currentTimeZone");
   if (currentTimeElement) {
     let currentTimeZone = moment.tz.guess();
+    let currentName = currentTimeZone.replace("_", " ").split("/")[1];
     let currentTime = moment().tz(currentTimeZone);
-    currentTimeElement.innerHTML = `Current time in ${currentTimeZone} is ${currentTime.format(
+    currentTimeElement.innerHTML = `Current time in ${currentName} is ${currentTime.format(
       "h:mm:ss [<small>]A[</small>]"
     )}`;
   }
@@ -63,6 +64,12 @@ function updateCity(event) {
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
 
   function updateTime() {
+    let selector = document.getElementById("selectorCity");
+    let selectedOption = selector.options[selector.selectedIndex];
+    if (selectedOption.value === "default") {
+      cityName = moment.tz.guess();
+    }
+
     let cityTime = moment().tz(cityTimeZone);
     let citiesElement = document.querySelector("#displayedCities");
     citiesElement.innerHTML = `
