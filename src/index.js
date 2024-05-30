@@ -86,8 +86,10 @@ function updateCity(event) {
               "h:mm:ss [<small>]A[</small>]"
             )}</div>
           </div>
-          check
         </div>
+        <br/>
+                <a href="https://admirable-nasturtium-97b61c.netlify.app/"
+        ><button id="goHome" class="goHome">Go Home</button> </a>
       </div>`;
   }
 

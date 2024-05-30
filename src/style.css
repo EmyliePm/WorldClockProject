@@ -120,6 +120,16 @@ h1 {
 .time small {
   font-size: 16px;
 }
+.goHome {
+  background-color: rgba(113, 156, 156, 0.507);
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+.goHome:hover {
+  color: black;
+  background: blueviolet;
+}
 footer {
   padding: 40px;
   text-align: center;
